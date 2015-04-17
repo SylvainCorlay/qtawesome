@@ -9,7 +9,7 @@ Welcome to qtawesome's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4 
 
    qtawesome 
 
