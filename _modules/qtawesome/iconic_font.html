@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,8 +7,11 @@
     
     <title>qtawesome.iconic_font &mdash; qtawesome 0.1.7 documentation</title>
     
-    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -23,30 +25,94 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="qtawesome 0.1.7 documentation" href="../../index.html" />
-    <link rel="up" title="qtawesome" href="../qtawesome.html" /> 
+    <link rel="up" title="qtawesome" href="../qtawesome.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   </head>
   <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="../../py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li><a href="../../index.html">qtawesome 0.1.7 documentation</a> &raquo;</li>
-          <li><a href="../index.html" >Module code</a> &raquo;</li>
-          <li><a href="../qtawesome.html" accesskey="U">qtawesome</a> &raquo;</li> 
-      </ul>
-    </div>  
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          qtawesome</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.7</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
             
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../qtawesome.html">qtawesome package</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"></ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
   <h1>Source code for qtawesome.iconic_font</h1><div class="highlight"><pre>
 <span class="sd">&quot;&quot;&quot;Classes handling iconic fonts&quot;&quot;&quot;</span>
 
@@ -84,12 +150,12 @@
 
     <span class="sd">&quot;&quot;&quot;Char icon painter&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="CharIconPainter.paint"><a class="viewcode-back" href="../../qtawesome.html#qtawesome.iconic_font.CharIconPainter.paint">[docs]</a>    <span class="k">def</span> <span class="nf">paint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">awesome</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+<div class="viewcode-block" id="CharIconPainter.paint"><a class="viewcode-back" href="../../qtawesome.html#qtawesome.iconic_font.CharIconPainter.paint">[docs]</a>    <span class="k">def</span> <span class="nf">paint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iconic</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Main paint method&quot;&quot;&quot;</span>
         <span class="k">for</span> <span class="n">opt</span> <span class="ow">in</span> <span class="n">options</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_paint_icon</span><span class="p">(</span><span class="n">awesome</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">opt</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_paint_icon</span><span class="p">(</span><span class="n">iconic</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">opt</span><span class="p">)</span>
 </div>
-    <span class="k">def</span> <span class="nf">_paint_icon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">awesome</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_paint_icon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iconic</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Paint a single icon&quot;&quot;&quot;</span>
         <span class="n">painter</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
         <span class="n">color</span><span class="p">,</span> <span class="n">char</span> <span class="o">=</span> <span class="n">options</span><span class="p">[</span><span class="s">&#39;color&#39;</span><span class="p">],</span> <span class="n">options</span><span class="p">[</span><span class="s">&#39;char&#39;</span><span class="p">]</span>
@@ -114,7 +180,7 @@
         <span class="k">if</span> <span class="n">animation</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
             <span class="n">animation</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">)</span>
 
-        <span class="n">painter</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="n">awesome</span><span class="o">.</span><span class="n">font</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">draw_size</span><span class="p">))</span>
+        <span class="n">painter</span><span class="o">.</span><span class="n">setFont</span><span class="p">(</span><span class="n">iconic</span><span class="o">.</span><span class="n">font</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">draw_size</span><span class="p">))</span>
         <span class="k">if</span> <span class="s">&#39;offset&#39;</span> <span class="ow">in</span> <span class="n">options</span><span class="p">:</span>
             <span class="n">rect</span> <span class="o">=</span> <span class="n">QRect</span><span class="p">(</span><span class="n">rect</span><span class="p">)</span>
             <span class="n">rect</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="s">&#39;offset&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">rect</span><span class="o">.</span><span class="n">width</span><span class="p">(),</span>
@@ -128,17 +194,17 @@
 </div>
 <div class="viewcode-block" id="CharIconEngine"><a class="viewcode-back" href="../../qtawesome.html#qtawesome.iconic_font.CharIconEngine">[docs]</a><span class="k">class</span> <span class="nc">CharIconEngine</span><span class="p">(</span><span class="n">QIconEngine</span><span class="p">):</span>
 
-    <span class="sd">&quot;&quot;&quot;Icon engine&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Specialization of QIconEngine used to draw font-based icons&quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">awesome</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iconic</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">CharIconEngine</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">awesome</span> <span class="o">=</span> <span class="n">awesome</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">iconic</span> <span class="o">=</span> <span class="n">iconic</span> 
         <span class="bp">self</span><span class="o">.</span><span class="n">painter</span> <span class="o">=</span> <span class="n">painter</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">options</span>
 
 <div class="viewcode-block" id="CharIconEngine.paint"><a class="viewcode-back" href="../../qtawesome.html#qtawesome.iconic_font.CharIconEngine.paint">[docs]</a>    <span class="k">def</span> <span class="nf">paint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">painter</span><span class="o">.</span><span class="n">paint</span><span class="p">(</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">awesome</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">iconic</span><span class="p">,</span> <span class="n">painter</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>
 </div>
 <div class="viewcode-block" id="CharIconEngine.pixmap"><a class="viewcode-back" href="../../qtawesome.html#qtawesome.iconic_font.CharIconEngine.pixmap">[docs]</a>    <span class="k">def</span> <span class="nf">pixmap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
         <span class="n">pm</span> <span class="o">=</span> <span class="n">QPixmap</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
@@ -154,9 +220,7 @@
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Constructor</span>
 
-<span class="sd">        Arguments</span>
-<span class="sd">        ---------</span>
-<span class="sd">        *args: tuples</span>
+<span class="sd">        :param *args: tuples</span>
 <span class="sd">            Each positional argument is a tuple of 3 or 4 values</span>
 <span class="sd">            - The prefix string to be used when accessing a given font set</span>
 <span class="sd">            - The ttf font filename</span>
@@ -324,7 +388,7 @@
 <span class="sd">            name of the custom icon</span>
 <span class="sd">        painter: CharIconPainter</span>
 <span class="sd">            The icon painter, implementing</span>
-<span class="sd">            `paint(self, awesome, painter, rect, mode, state, options)`</span>
+<span class="sd">            `paint(self, iconic, painter, rect, mode, state, options)`</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">painters</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">painter</span>
 </div>
@@ -343,45 +407,21 @@
         <span class="k">return</span> <span class="n">QIcon</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span></div>
 </pre></div>
 
-          </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="../../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
+      
+  </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="../../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="../../py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li><a href="../../index.html">qtawesome 0.1.7 documentation</a> &raquo;</li>
-          <li><a href="../index.html" >Module code</a> &raquo;</li>
-          <li><a href="../qtawesome.html" >qtawesome</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer">
-        &copy; Copyright 2015, The Spyder Development Team.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
-    </div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, The Spyder Development Team.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
   </body>
 </html>
